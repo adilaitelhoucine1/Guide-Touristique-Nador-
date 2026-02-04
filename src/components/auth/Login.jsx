@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { authService } from '../../services/authService.js';
+import { useDispatch, useSelector } from 'react-redux';
+import { loginUser } from '../../store/slices/authSlice';
 import './Login.css';
 
 const Login = () => {
@@ -8,8 +9,8 @@ const Login = () => {
     username: '',
     password: ''
   });
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
+  const { loading, error } = useSelector(state => state.auth);
   // const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -17,27 +18,18 @@ const Login = () => {
       ...formData,
       [e.target.name]: e.target.value
     });
-    setError('');
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     
     if (!formData.username || !formData.password) {
-      setError('Veuillez remplir tous les champs');
       return;
     }
 
-    setLoading(true);
-    try {
-      const result = await authService.login(formData.username, formData.password);
-
+    const result = await dispatch(loginUser(formData));
+    if (result.type === 'auth/login/fulfilled') {
       window.location.href = '/admin/dashboard';
-    } catch (error) {
-      console.error('Login error:', error);
-      setError(error.message);
-    } finally {
-      setLoading(false);
     }
   };
 
