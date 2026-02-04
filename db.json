@@ -1,0 +1,252 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Lagune de Marchica",
+      "category": "Sites naturels",
+      "description": "La lagune de Marchica est l'une des plus belles lagunes du Maroc, offrant des paysages époustouflants et une biodiversité exceptionnelle.",
+      "fullDescription": "La lagune de Marchica, située entre Nador et la mer Méditerranée, s'étend sur plus de 115 km². Cette merveille naturelle abrite une faune et une flore diversifiées, notamment des flamants roses, des hérons et de nombreuses espèces de poissons. Les eaux cristallines de la lagune offrent un cadre idéal pour la détente, les sports nautiques et l'observation des oiseaux. C'est un véritable joyau écologique qui attire les amoureux de la nature du monde entier.",
+      "images": [
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+        "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800",
+        "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800"
+      ],
+      "address": "Lagune de Marchica, Nador, Maroc",
+      "schedule": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "price": "Gratuit",
+      "transport": ["Voiture", "Bus", "Taxi"],
+      "accessibility": "Accessible en voiture, parking disponible",
+      "isActive": true,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Plage de Charrana",
+      "category": "Plages",
+      "description": "Une magnifique plage de sable fin aux eaux cristallines, parfaite pour la baignade et les activités nautiques.",
+      "fullDescription": "La plage de Charrana est l'une des plus belles plages de la région de Nador. Avec son sable fin doré et ses eaux turquoise, elle offre un cadre paradisiaque pour les vacanciers. La plage est équipée de toutes les commodités nécessaires : restaurants, cafés, location de parasols et transats. Les amateurs de sports nautiques y trouveront leur bonheur avec la possibilité de pratiquer le jet-ski, la planche à voile et la plongée sous-marine.",
+      "images": [
+        "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800",
+        "https://images.unsplash.com/photo-1544551763-77ef2d0cfc6c?w=800"
+      ],
+      "address": "Plage de Charrana, Nador, Maroc",
+      "schedule": {
+        "monday": "06:00 - 20:00",
+        "tuesday": "06:00 - 20:00",
+        "wednesday": "06:00 - 20:00",
+        "thursday": "06:00 - 20:00",
+        "friday": "06:00 - 20:00",
+        "saturday": "06:00 - 20:00",
+        "sunday": "06:00 - 20:00"
+      },
+      "price": "Gratuit",
+      "transport": ["Voiture", "Bus", "Taxi"],
+      "accessibility": "Accessible, parking payant disponible",
+      "isActive": true,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Mont Gourougou",
+      "category": "Sites naturels",
+      "description": "Point culminant de la région offrant une vue panoramique exceptionnelle sur Nador et la Méditerranée.",
+      "fullDescription": "Le mont Gourougou, avec ses 890 mètres d'altitude, est le point culminant de la région de Nador. Cette montagne offre des sentiers de randonnée pour tous les niveaux et une vue panoramique à couper le souffle sur la ville de Nador, la lagune de Marchica et la mer Méditerranée. La flore du mont Gourougou est particulièrement riche, avec de nombreuses espèces endémiques. C'est un lieu privilégié pour les amateurs de randonnée, de photographie et d'observation de la nature.",
+      "images": [
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
+        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+      ],
+      "address": "Mont Gourougou, Nador, Maroc",
+      "schedule": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "price": "Gratuit",
+      "transport": ["Voiture", "Randonnée"],
+      "accessibility": "Accessible en 4x4, sentiers de randonnée",
+      "isActive": true,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Souk Central de Nador",
+      "category": "Shopping et souks",
+      "description": "Le cœur commercial traditionnel de Nador où l'on trouve artisanat local, épices et produits du terroir.",
+      "fullDescription": "Le Souk Central de Nador est un véritable labyrinthe de couleurs, d'odeurs et de saveurs. Ce marché traditionnel est le lieu idéal pour découvrir l'artisanat local, les épices du Rif, les tapis berbères et les produits du terroir. Les visiteurs peuvent y déguster des spécialités locales, acheter des souvenirs authentiques et vivre une expérience culturelle immersive. Le souk est particulièrement animé le matin et en fin d'après-midi.",
+      "images": [
+        "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800",
+        "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=800"
+      ],
+      "address": "Centre-ville, Nador, Maroc",
+      "schedule": {
+        "monday": "08:00 - 18:00",
+        "tuesday": "08:00 - 18:00",
+        "wednesday": "08:00 - 18:00",
+        "thursday": "08:00 - 18:00",
+        "friday": "08:00 - 12:00, 14:00 - 18:00",
+        "saturday": "08:00 - 18:00",
+        "sunday": "08:00 - 13:00"
+      },
+      "price": "Gratuit (prix des articles variables)",
+      "transport": ["Voiture", "Bus", "Taxi", "À pied"],
+      "accessibility": "Centre-ville, facilement accessible",
+      "isActive": true,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Restaurant Al Andalous",
+      "category": "Restaurants",
+      "description": "Restaurant traditionnel servant une cuisine marocaine authentique avec vue sur la lagune.",
+      "fullDescription": "Le Restaurant Al Andalous est réputé pour sa cuisine marocaine authentique et sa vue imprenable sur la lagune de Marchica. Le chef propose des plats traditionnels préparés avec des ingrédients frais et locaux : tajines, couscous, poissons grillés et pâtisseries orientales. L'ambiance chaleureuse et le service attentionné font de ce restaurant un incontournable pour découvrir les saveurs du Rif. La terrasse offre un cadre romantique pour les dîners au coucher du soleil.",
+      "images": [
+        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800",
+        "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800"
+      ],
+      "address": "Avenue Mohammed V, Nador, Maroc",
+      "schedule": {
+        "monday": "12:00 - 15:00, 19:00 - 23:00",
+        "tuesday": "12:00 - 15:00, 19:00 - 23:00",
+        "wednesday": "12:00 - 15:00, 19:00 - 23:00",
+        "thursday": "12:00 - 15:00, 19:00 - 23:00",
+        "friday": "12:00 - 15:00, 19:00 - 23:00",
+        "saturday": "12:00 - 15:00, 19:00 - 23:00",
+        "sunday": "12:00 - 15:00, 19:00 - 23:00"
+      },
+      "price": "150-300 MAD par personne",
+      "transport": ["Voiture", "Bus", "Taxi"],
+      "accessibility": "Accessible, parking disponible",
+      "isActive": true,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-01-15T10:00:00Z"
+    },
+    {
+      "id": 6,
+      "name": "Hôtel Marchica Lagoon Resort",
+      "category": "Hôtels et hébergements",
+      "description": "Hôtel de luxe 5 étoiles avec spa, piscine et accès direct à la lagune de Marchica.",
+      "fullDescription": "Le Marchica Lagoon Resort est un hôtel 5 étoiles situé sur les rives de la lagune de Marchica. Cet établissement de luxe propose des chambres et suites élégamment décorées avec vue sur la lagune ou les jardins. Les équipements incluent un spa de renommée internationale, plusieurs piscines, des restaurants gastronomiques, un centre de fitness et un accès privé à la plage. L'hôtel organise également des activités nautiques et des excursions dans la région.",
+      "images": [
+        "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800"
+      ],
+      "address": "Route de la Lagune, Nador, Maroc",
+      "schedule": {
+        "monday": "Ouvert 24h/24",
+        "tuesday": "Ouvert 24h/24",
+        "wednesday": "Ouvert 24h/24",
+        "thursday": "Ouvert 24h/24",
+        "friday": "Ouvert 24h/24",
+        "saturday": "Ouvert 24h/24",
+        "sunday": "Ouvert 24h/24"
+      },
+      "price": "1200-3000 MAD par nuit",
+      "transport": ["Voiture", "Taxi", "Navette aéroport"],
+      "accessibility": "Accessible PMR, parking privé",
+      "isActive": true,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-01-15T10:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Plages",
+      "description": "Les plus belles plages de Nador et ses environs"
+    },
+    {
+      "id": 2,
+      "name": "Sites naturels",
+      "description": "Découvrez la nature exceptionnelle de la région"
+    },
+    {
+      "id": 3,
+      "name": "Monuments et patrimoine",
+      "description": "Le patrimoine historique et culturel de Nador"
+    },
+    {
+      "id": 4,
+      "name": "Musées et culture",
+      "description": "Espaces culturels et musées de la région"
+    },
+    {
+      "id": 5,
+      "name": "Restaurants",
+      "description": "Savourez la gastronomie locale et internationale"
+    },
+    {
+      "id": 6,
+      "name": "Hôtels et hébergements",
+      "description": "Où séjourner à Nador"
+    },
+    {
+      "id": 7,
+      "name": "Cafés et salons de thé",
+      "description": "Lieux de détente et de convivialité"
+    },
+    {
+      "id": 8,
+      "name": "Shopping et souks",
+      "description": "Shopping traditionnel et moderne"
+    },
+    {
+      "id": 9,
+      "name": "Loisirs et divertissements",
+      "description": "Activités de loisirs et divertissement"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@nador-guide.com",
+      "firstName": "Admin",
+      "lastName": "Nador",
+      "gender": "male",
+      "image": "https://robohash.org/admin",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsImVtYWlsIjoiYWRtaW5AbmFkb3ItZ3VpZGUuY29tIiwiZmlyc3ROYW1lIjoiQWRtaW4iLCJsYXN0TmFtZSI6Ik5hZG9yIiwiZ2VuZGVyIjoibWFsZSIsImltYWdlIjoiaHR0cHM6Ly9yb2JvaGFzaC5vcmcvYWRtaW4iLCJpYXQiOjE2MzUyNTU2ODEsImV4cCI6MTYzNTI1OTI4MX0.admin-token"
+    }
+  ],
+  "newsletter": [
+    {
+      "id": 1,
+      "email": "user@example.com",
+      "firstName": "John",
+      "subscribedAt": "2024-01-15T10:00:00Z",
+      "isActive": true
+    }
+  ],
+  "stats": {
+    "totalPlaces": 6,
+    "activePlaces": 6,
+    "inactivePlaces": 0,
+    "totalSubscribers": 1,
+    "placesByCategory": {
+      "Plages": 1,
+      "Sites naturels": 2,
+      "Monuments et patrimoine": 0,
+      "Musées et culture": 0,
+      "Restaurants": 1,
+      "Hôtels et hébergements": 1,
+      "Cafés et salons de thé": 0,
+      "Shopping et souks": 1,
+      "Loisirs et divertissements": 0
+    }
+  }
+}
