@@ -1,5 +1,5 @@
 import { Navigate } from 'react-router-dom';
-import { authService } from '../../services/authService.js';
+import { authService } from '../../services/authService.ts';
 
 const PrivateRoute = ({ children }) => {
   const isAuthenticated = authService.isAuthenticated();

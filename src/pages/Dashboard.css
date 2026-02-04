@@ -16,6 +16,26 @@
   flex-shrink: 0;
 }
 
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  color: #2383e2;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+}
+
 .dashboard-header h1 {
   color: #37352f;
   margin: 0;
