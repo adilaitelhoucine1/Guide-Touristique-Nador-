@@ -19,6 +19,7 @@ const Dashboard: React.FC = () => {
   const handleLogout = () => {
     authService.logout();
     navigate('/admin/login');
+
   };
 
   return (
