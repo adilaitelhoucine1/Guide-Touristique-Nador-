@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchPlaces } from '../store/slices/placesSlice';
 import { RootState, AppDispatch } from '../store/types';
+import PlaceCard from './placeCard/PlaceCard';
 
 const PlacesList = () => {
     const dispatch = useDispatch<AppDispatch>();
@@ -19,14 +20,17 @@ const PlacesList = () => {
     return (
         <div>
             <h2>Lieux Touristiques</h2>
-            {places.map((place) => (
-                <div key={place.id} style={{ border: '1px solid #ccc', margin: '10px', padding: '10px' }}>
-                    <h3>{place.name}</h3>
-                    <p>{place.category}</p>
-                    <p>{place.description}</p>
-                    <p>{place.price}</p>
-                </div>
-            ))}
+            <div style={{ 
+                display: 'flex', 
+                flexWrap: 'wrap', 
+                gap: '20px', 
+                justifyContent: 'flex-start',
+                padding: '10px 0' 
+            }}>
+                {places.map((place) => (
+                    <PlaceCard key={place.id} place={place} />
+                ))}
+            </div>
         </div>
     );
 };
