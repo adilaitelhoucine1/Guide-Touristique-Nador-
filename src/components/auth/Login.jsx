@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate, Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../../store/slices/authSlice.ts';
+import { authService } from '../../services/authService.ts';
 import './Login.css';
 
 const Login = () => {
@@ -11,7 +12,14 @@ const Login = () => {
   });
   const dispatch = useDispatch();
   const { loading, error } = useSelector(state => state.auth);
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
+
+  // Redirect if already authenticated
+  useEffect(() => {
+    if (authService.isAuthenticated()) {
+      navigate('/admin/dashboard');
+    }
+  }, [navigate]);
 
   const handleChange = (e) => {
     setFormData({
@@ -29,13 +37,19 @@ const Login = () => {
 
     const result = await dispatch(loginUser(formData));
     if (result.type === 'auth/login/fulfilled') {
-      window.location.href = '/admin/dashboard';
+      navigate('/admin/dashboard');
     }
   };
 
   return (
     <div className="login-container">
       <div className="login-card">
+        <div className="login-header">
+          <Link to="/" className="back-to-home">
+            ← Retour à l'accueil
+          </Link>
+        </div>
+        
         <h2>Connexion Administrateur</h2>
         <p className="login-subtitle">Guide Touristique Nador</p>
         
