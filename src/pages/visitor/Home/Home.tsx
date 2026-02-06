@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <header className="visitor-header">
         <div className="logo-section">
           <img src="https://cdn-icons-png.flaticon.com/512/5730/5730373.png" alt="Siya7a Logo" className="logo" />
-          <h1 className="logo-text">Siya7a - Guide Touristique Nador</h1>
+          <h1 className="logo-text">Siya7a</h1>
         </div>
         <nav>
           <Link to="/admin/login" className="admin-link">
