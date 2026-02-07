@@ -14,19 +14,24 @@
 }
 
 .back-link {
-    color: #3498db;
-    text-decoration: none;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
     font-weight: 600;
     margin-bottom: 20px;
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    transition: color 0.3s;
+    transition: all 0.3s;
     font-size: 1rem;
+    cursor: pointer;
 }
 
 .back-link:hover {
-    color: #2980b9;
+    background: #2980b9;
+    transform: translateX(-3px);
 }
 
 .place-header {

@@ -1,4 +1,4 @@
-import { useParams, Link, useLocation } from 'react-router-dom';
+import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../store/types';
 import { Place } from '../../model/place';
@@ -7,6 +7,7 @@ import { useState } from 'react';
 
 const PlaceDetails: React.FC = () => {
     const { id } = useParams<{ id: string }>();
+    const navigate = useNavigate();
     const location = useLocation();
     const places = useSelector((state: RootState) => state.places.items);
     const [selectedImage, setSelectedImage] = useState(0);
@@ -14,12 +15,20 @@ const PlaceDetails: React.FC = () => {
     // Get place from navigation state (props) or fallback to Redux
     const place: Place | undefined = location.state?.place || places.find(p => p.id == Number(id));
 
+    const handleBack = () => {
+        if (window.history.length > 1) {
+            navigate(-1);
+        } else {
+            navigate('/');
+        }
+    };
+
     if (!place) {
         return (
             <div className="place-details-container">
                 <div className="not-found">
                     <h2>Lieu non trouvé</h2>
-                    <Link to="/" className="back-link">← Retour à l'accueil</Link>
+                    <button onClick={handleBack} className="back-link">← Retour</button>
                 </div>
             </div>
         );
@@ -39,7 +48,7 @@ const PlaceDetails: React.FC = () => {
     return (
         <div className="place-details-container">
             <div className="place-details">
-                <Link to="/" className="back-link">← Retour à l'accueil</Link>
+                <button onClick={handleBack} className="back-link">← Retour</button>
 
                 <div className="place-header">
                     <h1>{place.name}</h1>

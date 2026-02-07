@@ -4,6 +4,9 @@ import Dashboard from './pages/Dashboard';
 import Home from './pages/visitor/Home/Home';
 import PrivateRoute from './components/auth/PrivateRoute.jsx';
 import PlaceDetails from "./pages/PlaceDetails/PlaceDetails";
+import AdminDashboard from './pages/admin/AdminDashboard';
+import AdminPlacesView from './pages/admin/AdminPlacesView';
+import PlaceForm from './pages/admin/PlaceForm';
 import './App.css';
 
 function App() {
@@ -18,7 +21,31 @@ function App() {
             path="/admin/dashboard" 
             element={
               <PrivateRoute>
-                <Dashboard />
+                <AdminDashboard />
+              </PrivateRoute>
+            } 
+          />
+          <Route 
+            path="/admin/places" 
+            element={
+              <PrivateRoute>
+                <AdminPlacesView />
+              </PrivateRoute>
+            } 
+          />
+          <Route 
+            path="/admin/places/new" 
+            element={
+              <PrivateRoute>
+                <PlaceForm />
+              </PrivateRoute>
+            } 
+          />
+          <Route 
+            path="/admin/places/edit/:id" 
+            element={
+              <PrivateRoute>
+                <PlaceForm />
               </PrivateRoute>
             } 
           />
