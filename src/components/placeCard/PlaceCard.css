@@ -1,0 +1,194 @@
+.place-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.place-card.inactive-place {
+  opacity: 0.7;
+  border: 2px solid #ff9800;
+}
+
+.place-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.place-card-image {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.place-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.place-card:hover .place-card-image img {
+  transform: scale(1.05);
+}
+
+.place-card-category {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(52, 152, 219, 0.95);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.inactive-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 152, 0, 0.95);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.place-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.place-card-title {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.place-card-description {
+  color: #7f8c8d;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.place-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid #ecf0f1;
+}
+
+.place-card-price {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.place-card-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 0.9rem;
+}
+
+.place-card-btn:hover {
+  background: #2980b9;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.btn-admin {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+
+.btn-admin svg {
+  display: block;
+}
+
+.btn-admin:hover {
+  transform: scale(1.15);
+}
+
+.btn-admin.edit svg {
+  stroke: #2196f3;
+}
+
+.btn-admin.edit:hover {
+  background: rgba(33, 150, 243, 0.1);
+}
+
+.btn-admin.toggle svg {
+  stroke: #ff9800;
+}
+
+.btn-admin.toggle:hover {
+  background: rgba(255, 152, 0, 0.1);
+}
+
+.btn-admin.delete svg {
+  stroke: #f44336;
+}
+
+.btn-admin.delete:hover {
+  background: rgba(244, 67, 54, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .place-card-image {
+    height: 180px;
+  }
+
+  .place-card-content {
+    padding: 1.2rem;
+  }
+
+  .place-card-title {
+    font-size: 1.1rem;
+  }
+
+  .place-card-description {
+    font-size: 0.9rem;
+  }
+  
+  .btn-admin {
+    font-size: 1.2rem;
+  }
+}
+

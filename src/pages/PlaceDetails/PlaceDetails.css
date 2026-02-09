@@ -1,0 +1,270 @@
+.place-details-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f8f9fa;
+    min-height: 100vh;
+}
+
+.place-details {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-link {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.back-link:hover {
+    background: #2980b9;
+    transform: translateX(-3px);
+}
+
+.place-header {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.place-header h1 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.category-badge {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Image Gallery */
+.place-images-gallery {
+    margin: 2rem 0;
+}
+
+.main-image {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.thumbnail-images img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s, transform 0.3s;
+    border: 3px solid transparent;
+}
+
+.thumbnail-images img:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.thumbnail-images img.active {
+    opacity: 1;
+    border-color: #3498db;
+}
+
+/* Content Layout */
+.place-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.place-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-section {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.info-section h3 {
+    color: #2c3e50;
+    margin: 0 0 1rem 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.info-section p, .full-description {
+    color: #555;
+    line-height: 1.8;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.transport-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.transport-badge {
+    background: #ecf0f1;
+    color: #2c3e50;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Sidebar */
+.place-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.price-card, .schedule-card {
+    background: #fff;
+    border: 2px solid #ecf0f1;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.price-card h3, .schedule-card h3 {
+    color: #2c3e50;
+    margin: 0 0 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.price-value {
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.schedule-item:last-child {
+    border-bottom: none;
+}
+
+.day-name {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.day-hours {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Not Found */
+.not-found {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.not-found h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .place-content {
+        grid-template-columns: 1fr;
+    }
+
+    .place-sidebar {
+        order: -1;
+    }
+
+    .main-image {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .place-details {
+        padding: 1.5rem;
+    }
+
+    .place-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-image {
+        height: 250px;
+    }
+
+    .thumbnail-images img {
+        width: 80px;
+        height: 60px;
+    }
+
+    .info-section {
+        padding: 1rem;
+    }
+
+    .price-card, .schedule-card {
+        padding: 1rem;
+    }
+}
