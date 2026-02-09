@@ -10,6 +10,11 @@
   height: 100%;
 }
 
+.place-card.inactive-place {
+  opacity: 0.7;
+  border: 2px solid #ff9800;
+}
+
 .place-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
@@ -45,6 +50,18 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.inactive-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 152, 0, 0.95);
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 .place-card-content {
@@ -106,6 +123,52 @@
   background: #2980b9;
 }
 
+.admin-actions {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.btn-admin {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: transform 0.2s;
+  border-radius: 5px;
+}
+
+.btn-admin svg {
+  display: block;
+}
+
+.btn-admin:hover {
+  transform: scale(1.15);
+}
+
+.btn-admin.edit svg {
+  stroke: #2196f3;
+}
+
+.btn-admin.edit:hover {
+  background: rgba(33, 150, 243, 0.1);
+}
+
+.btn-admin.toggle svg {
+  stroke: #ff9800;
+}
+
+.btn-admin.toggle:hover {
+  background: rgba(255, 152, 0, 0.1);
+}
+
+.btn-admin.delete svg {
+  stroke: #f44336;
+}
+
+.btn-admin.delete:hover {
+  background: rgba(244, 67, 54, 0.1);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .place-card-image {
@@ -122,6 +185,10 @@
 
   .place-card-description {
     font-size: 0.9rem;
+  }
+  
+  .btn-admin {
+    font-size: 1.2rem;
   }
 }
 

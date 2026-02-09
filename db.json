@@ -1,7 +1,7 @@
 {
   "places": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Lagune de Marchica",
       "category": "Sites naturels",
       "description": "La lagune de Marchica est l'une des plus belles lagunes du Maroc, offrant des paysages époustouflants et une biodiversité exceptionnelle.",
@@ -22,14 +22,18 @@
         "sunday": "Ouvert 24h/24"
       },
       "price": "Gratuit",
-      "transport": ["Voiture", "Bus", "Taxi"],
+      "transport": [
+        "Voiture",
+        "Bus",
+        "Taxi"
+      ],
       "accessibility": "Accessible en voiture, parking disponible",
       "isActive": true,
       "createdAt": "2024-01-15T10:00:00Z",
-      "updatedAt": "2024-01-15T10:00:00Z"
+      "updatedAt": "2026-02-07T11:25:48.532Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Plage de Charrana",
       "category": "Plages",
       "description": "Une magnifique plage de sable fin aux eaux cristallines, parfaite pour la baignade et les activités nautiques.",
@@ -49,41 +53,18 @@
         "sunday": "06:00 - 20:00"
       },
       "price": "Gratuit",
-      "transport": ["Voiture", "Bus", "Taxi"],
-      "accessibility": "Accessible, parking payant disponible",
-      "isActive": true,
-      "createdAt": "2024-01-15T10:00:00Z",
-      "updatedAt": "2024-01-15T10:00:00Z"
-    },
-    {
-      "id": 3,
-      "name": "Mont Gourougou",
-      "category": "Sites naturels",
-      "description": "Point culminant de la région offrant une vue panoramique exceptionnelle sur Nador et la Méditerranée.",
-      "fullDescription": "Le mont Gourougou, avec ses 890 mètres d'altitude, est le point culminant de la région de Nador. Cette montagne offre des sentiers de randonnée pour tous les niveaux et une vue panoramique à couper le souffle sur la ville de Nador, la lagune de Marchica et la mer Méditerranée. La flore du mont Gourougou est particulièrement riche, avec de nombreuses espèces endémiques. C'est un lieu privilégié pour les amateurs de randonnée, de photographie et d'observation de la nature.",
-      "images": [
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
+      "transport": [
+        "Voiture",
+        "Bus",
+        "Taxi"
       ],
-      "address": "Mont Gourougou, Nador, Maroc",
-      "schedule": {
-        "monday": "Ouvert 24h/24",
-        "tuesday": "Ouvert 24h/24",
-        "wednesday": "Ouvert 24h/24",
-        "thursday": "Ouvert 24h/24",
-        "friday": "Ouvert 24h/24",
-        "saturday": "Ouvert 24h/24",
-        "sunday": "Ouvert 24h/24"
-      },
-      "price": "Gratuit",
-      "transport": ["Voiture", "Randonnée"],
-      "accessibility": "Accessible en 4x4, sentiers de randonnée",
-      "isActive": true,
+      "accessibility": "Accessible, parking payant disponible",
+      "isActive": false,
       "createdAt": "2024-01-15T10:00:00Z",
-      "updatedAt": "2024-01-15T10:00:00Z"
+      "updatedAt": "2026-02-07T12:20:43.190Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Souk Central de Nador",
       "category": "Shopping et souks",
       "description": "Le cœur commercial traditionnel de Nador où l'on trouve artisanat local, épices et produits du terroir.",
@@ -103,14 +84,19 @@
         "sunday": "08:00 - 13:00"
       },
       "price": "Gratuit (prix des articles variables)",
-      "transport": ["Voiture", "Bus", "Taxi", "À pied"],
+      "transport": [
+        "Voiture",
+        "Bus",
+        "Taxi",
+        "À pied"
+      ],
       "accessibility": "Centre-ville, facilement accessible",
       "isActive": true,
       "createdAt": "2024-01-15T10:00:00Z",
-      "updatedAt": "2024-01-15T10:00:00Z"
+      "updatedAt": "2026-02-07T11:43:43.419Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Restaurant Al Andalous",
       "category": "Restaurants",
       "description": "Restaurant traditionnel servant une cuisine marocaine authentique avec vue sur la lagune.",
@@ -130,14 +116,18 @@
         "sunday": "12:00 - 15:00, 19:00 - 23:00"
       },
       "price": "150-300 MAD par personne",
-      "transport": ["Voiture", "Bus", "Taxi"],
+      "transport": [
+        "Voiture",
+        "Bus",
+        "Taxi"
+      ],
       "accessibility": "Accessible, parking disponible",
       "isActive": true,
       "createdAt": "2024-01-15T10:00:00Z",
-      "updatedAt": "2024-01-15T10:00:00Z"
+      "updatedAt": "2026-02-07T11:33:19.468Z"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Hôtel Marchica Lagoon Resort",
       "category": "Hôtels et hébergements",
       "description": "Hôtel de luxe 5 étoiles avec spa, piscine et accès direct à la lagune de Marchica.",
@@ -157,63 +147,123 @@
         "sunday": "Ouvert 24h/24"
       },
       "price": "1200-3000 MAD par nuit",
-      "transport": ["Voiture", "Taxi", "Navette aéroport"],
+      "transport": [
+        "Voiture",
+        "Taxi",
+        "Navette aéroport"
+      ],
       "accessibility": "Accessible PMR, parking privé",
       "isActive": true,
       "createdAt": "2024-01-15T10:00:00Z",
-      "updatedAt": "2024-01-15T10:00:00Z"
+      "updatedAt": "2026-02-07T11:25:52.139Z"
+    },
+    {
+      "id": "2439",
+      "name": "Voluptates in id qu",
+      "category": "Restaurants",
+      "description": "Amet et excepteur m",
+      "fullDescription": "Minima hic repudiand",
+      "images": [
+        "https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+      ],
+      "address": "Voluptates est delen",
+      "schedule": {
+        "monday": "9:00 - 18:00",
+        "tuesday": "9:00 - 18:00",
+        "wednesday": "9:00 - 18:00",
+        "thursday": "9:00 - 18:00",
+        "friday": "9:00 - 18:00",
+        "saturday": "9:00 - 18:00",
+        "sunday": "9:00 - 18:00"
+      },
+      "price": "Dignissimos eos fug",
+      "transport": [
+        "Similique omnis temp"
+      ],
+      "accessibility": "Eveniet inventore s",
+      "isActive": true,
+      "createdAt": "2026-02-07T11:23:27.681Z",
+      "updatedAt": "2026-02-07T11:41:13.303Z"
+    },
+    {
+      "id": "7b48",
+      "name": "heijii",
+      "category": "Cafés et salons de thé",
+      "description": "Aliquip ex iure cons",
+      "fullDescription": "Aut culpa ex sed sin",
+      "images": [
+        "https://www.nofih.me"
+      ],
+      "address": "Voluptatibus veniam",
+      "schedule": {
+        "monday": "Ut rerum molestias s",
+        "tuesday": "Velit aliquam delec",
+        "wednesday": "Aliquam quae fugiat",
+        "thursday": "Esse omnis autem max",
+        "friday": "Necessitatibus fugia",
+        "saturday": "Quo sunt quia rerum ",
+        "sunday": "Porro dolores fugiat"
+      },
+      "price": "Facere adipisicing e",
+      "transport": [
+        "Ea dolore id suscipi"
+      ],
+      "accessibility": "Eu rerum suscipit qu",
+      "isActive": false,
+      "createdAt": "2026-02-07T12:48:35.194Z",
+      "updatedAt": "2026-02-07T13:08:47.888Z"
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Plages",
       "description": "Les plus belles plages de Nador et ses environs"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Sites naturels",
       "description": "Découvrez la nature exceptionnelle de la région"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Monuments et patrimoine",
       "description": "Le patrimoine historique et culturel de Nador"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Musées et culture",
       "description": "Espaces culturels et musées de la région"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Restaurants",
       "description": "Savourez la gastronomie locale et internationale"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Hôtels et hébergements",
       "description": "Où séjourner à Nador"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Cafés et salons de thé",
       "description": "Lieux de détente et de convivialité"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Shopping et souks",
       "description": "Shopping traditionnel et moderne"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Loisirs et divertissements",
       "description": "Activités de loisirs et divertissement"
     }
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "admin",
       "email": "admin@nador-guide.com",
       "firstName": "Admin",
@@ -225,7 +275,7 @@
   ],
   "newsletter": [
     {
-      "id": 1,
+      "id": "1",
       "email": "user@example.com",
       "firstName": "John",
       "subscribedAt": "2024-01-15T10:00:00Z",

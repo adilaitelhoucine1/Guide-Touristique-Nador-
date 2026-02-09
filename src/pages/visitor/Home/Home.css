@@ -9,6 +9,7 @@
   padding: 1rem 2rem;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  min-height: 70px;
 }
 
 .logo-section {
@@ -34,11 +35,12 @@
   padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 4px;
-  transition: background 0.3s;
+  transition: all 0.3s;
 }
 
 .admin-link:hover {
   background: #2980b9;
+  text-decoration: underline;
 }
 
 .visitor-content {
